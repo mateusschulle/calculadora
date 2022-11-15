@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+    background-color:rgba(46, 37, 7, 0.644);
 }
 
 .container__calculadora {
@@ -83,11 +84,29 @@ body {
 }
 
 .botao__igual {
-    background-color: blue;
+    background-color: red;
 }
 
 .botao__ponto {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.botao__dobro-zero {
+    width: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao__quaternario {
+    height: 4.7em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: blue;
+}
+
+.azul {
+    background-color: blue;
 }

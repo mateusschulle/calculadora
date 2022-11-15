@@ -1,7 +1,7 @@
 let tela = document.querySelector(".calculadora__tela")
 let visor = "";
 let calculo = "";
-
+let resultado = "";
 const listaDeBotoes = document.querySelectorAll(".botao");
 let contador = 0;
 
@@ -11,9 +11,8 @@ while (contador < listaDeBotoes.length) {
 }
 
 function inserirNumero(event) {
-    console.log(event.target.innerHTML)
-    calculo = calculo + event.target.innerHTML; 
-    console.log(calculo);
+    calculo = event.target.innerHTML;
+    resultado = resultado + calculo;
     visor = visor + event.target.innerHTML;
     tela.innerHTML = visor;
   
@@ -24,6 +23,7 @@ botaoLimpar.onclick = limpaTela;
 
 function limpaTela() {
     calculo = "";
+    resultado = "";
     visor = "";
     tela.innerHTML = visor;
 };
@@ -32,7 +32,7 @@ let botaoIgual = document.querySelector(".botao__igual");
 botaoIgual.onclick = calcular;
 
 function calcular() {
-    calculo = eval(calculo);
-    tela.innerHTML = calculo;
+    resultado = eval(resultado);
+    tela.innerHTML = resultado;
 }
 
