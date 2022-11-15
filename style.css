@@ -6,7 +6,12 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-color:rgba(46, 37, 7, 0.644);
+    background: 
+    radial-gradient(ellipse at 20% 20%, #c20f0fc5 0%, transparent 70%),
+    radial-gradient(ellipse at 60% 20%, #2218aa 0%, transparent 70%),
+    radial-gradient(ellipse at 100% 20%, #ff5e00 0%, transparent 70%),
+    radial-gradient(ellipse at 100% 100%, #1306c5 0%, transparent 70%),
+    radial-gradient(ellipse at 20% 100%, #922e47 0%, transparent 70%);
 }
 
 .container__calculadora {
