@@ -45,8 +45,20 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 21px;
     margin-bottom: 0.5em;
-
+    box-shadow: 2px 2px 10px black;
+    transition: all 10ms;
 }
+
+.botao:hover {
+    cursor: pointer;
+}
+
+.botao:active {
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 10ms;
+}
+
 
 .container__botoes {
     display: flex;
@@ -72,4 +84,10 @@ body {
 
 .botao__igual {
     background-color: blue;
+}
+
+.botao__ponto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
